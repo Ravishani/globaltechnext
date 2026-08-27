@@ -41,8 +41,9 @@ export default function HeroBanner() {
                 </span>
               </div>
 
-              <h1 className="text-[35px] font-[900] leading-[42px] tracking-[-1.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-2px] lg:text-[60px] lg:leading-[72px] lg:tracking-[-2.8px]">
-                Build Digital
+              <h1 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+                <span className="block">Build Digital</span>
+
                 <span className="block">
                   <span className="bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
                     Experiences
@@ -50,17 +51,13 @@ export default function HeroBanner() {
                   That
                 </span>
 
-                <span className="block">
-                  Move Businesses
-                  <span className="hidden sm:inline"> Forward.</span>
-                  <span className="block sm:hidden">Forward.</span>
-                </span>
+                <span className="block">Move Businesses Forward.</span>
               </h1>
 
               <p className="mt-6 max-w-[620px] text-[11px] leading-[20px] text-[#A8A39C] sm:mt-7 sm:text-[12px] sm:leading-[22px] lg:text-[13px] lg:leading-6">
                 We create powerful websites, applications and digital
-                experiences that combine technology, design and strategy to
-                help ambitious brands grow faster.
+                experiences that combine technology, design and strategy to help
+                ambitious brands grow faster.
               </p>
 
               <div className="mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row">
@@ -69,7 +66,6 @@ export default function HeroBanner() {
                   className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.20)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.30)] sm:h-[54px] sm:w-auto sm:px-7"
                 >
                   Start Your Project
-
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#151515] transition-transform duration-300 group-hover:rotate-45">
                     <IconArrowUpRight size={15} stroke={2} />
                   </span>
@@ -80,7 +76,6 @@ export default function HeroBanner() {
                   className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.035] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-[#E4E0DA] backdrop-blur-md transition-all duration-300 hover:border-[#FF6A00]/40 hover:bg-white/[0.07] sm:h-[54px] sm:w-auto sm:px-7"
                 >
                   Explore Our Work
-
                   <IconArrowRight
                     size={15}
                     className="text-[#FF7900] transition-transform duration-300 group-hover:translate-x-1"

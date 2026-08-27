@@ -41,18 +41,18 @@ export default function Footer() {
 
   return (
     <>
-     <a
+   <a
   href="https://wa.me/919555787844"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Contact GlobalTechNext on WhatsApp"
-  className="group fixed bottom-5 right-5 z-[999] sm:bottom-7 sm:right-7"
+  className="group fixed bottom-5 right-4 z-[999] sm:bottom-7 sm:right-7"
 >
   <div className="relative">
     <div className="absolute -inset-3 rounded-full bg-[#25D366]/10 blur-2xl opacity-0 transition-all duration-500 group-hover:opacity-100" />
 
     <div className="relative flex items-center gap-3 overflow-hidden rounded-full border border-white/[0.10] bg-[#101010]/95 py-2 pl-2 pr-3 shadow-[0_12px_45px_rgba(0,0,0,0.35)] backdrop-blur-xl transition-all duration-500 group-hover:border-[#25D366]/30 group-hover:bg-[#151515] group-hover:shadow-[0_15px_50px_rgba(37,211,102,0.12)]">
-
+      {/* WHATSAPP ICON */}
       <span className="relative flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_0_25px_rgba(37,211,102,0.18)] transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_30px_rgba(37,211,102,0.30)]">
         <IconBrandWhatsapp size={22} stroke={1.8} />
 
@@ -61,21 +61,23 @@ export default function Footer() {
         </span>
       </span>
 
-      <span className="hidden pr-1 sm:block">
-        <span className="block text-[7px] font-bold uppercase tracking-[1.8px] text-[#625D57]">
+      {/* TEXT */}
+      <span className="min-w-0 pr-1">
+        <span className="block whitespace-nowrap text-[7px] font-bold uppercase tracking-[1.8px] text-[#625D57]">
           GlobalTechNext
         </span>
 
-        <span className="mt-0.5 block text-[11px] font-[800] tracking-[-0.1px] text-white">
+        <span className="mt-0.5 block whitespace-nowrap text-[11px] font-[800] tracking-[-0.1px] text-white">
           Chat With Our Team
         </span>
 
-        <span className="mt-0.5 block text-[8px] font-medium text-[#25D366]">
+        <span className="mt-0.5 block whitespace-nowrap text-[8px] font-medium text-[#25D366]">
           WhatsApp • 9555787844
         </span>
       </span>
 
-      <span className="hidden h-7 w-7 items-center justify-center rounded-full bg-white/[0.06] text-[#25D366] transition-all duration-300 group-hover:bg-[#25D366] group-hover:text-white sm:flex">
+      {/* ARROW */}
+      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-white/[0.06] text-[#25D366] transition-all duration-300 group-hover:bg-[#25D366] group-hover:text-white">
         <IconArrowUpRight
           size={13}
           stroke={1.8}

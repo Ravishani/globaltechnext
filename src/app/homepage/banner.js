@@ -26,7 +26,7 @@ export default function HeroBanner() {
       </div>
 
       <div className="mx-auto w-full max-w-[1480px] px-5 sm:px-7 lg:px-10">
-        <div className="relative flex min-h-[700px] flex-col justify-center py-15 sm:min-h-[750px] sm:py-24 lg:min-h-[520px] lg:py-20">
+        <div className="relative flex min-h-[700px] flex-col justify-center py-10 sm:min-h-[750px] sm:py-24 lg:min-h-[520px] lg:py-20">
           <div className="grid w-full items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8 xl:gap-14">
             <div className="relative z-10 max-w-[800px]">
               <div className="mb-6 inline-flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 backdrop-blur-xl sm:mb-7 sm:px-4">
@@ -48,13 +48,13 @@ export default function HeroBanner() {
                   <span className="bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
                     Experiences
                   </span>{" "}
-                  That
+                  That 
                 </span>
 
                 <span className="block">Move Businesses Forward.</span>
               </h1>
 
-              <p className="mt-6 max-w-[620px] text-[11px] leading-[20px] text-[#A8A39C] sm:mt-7 sm:text-[12px] sm:leading-[22px] lg:text-[13px] lg:leading-6">
+              <p className="mt-6 max-w-[620px] text-[13px] leading-6 tracking-[0.1px] text-[#A8A39C] sm:mt-7 sm:text-[14px] sm:leading-7 lg:text-[15px] lg:leading-7">
                 We create powerful websites, applications and digital
                 experiences that combine technology, design and strategy to help
                 ambitious brands grow faster.
@@ -63,7 +63,7 @@ export default function HeroBanner() {
               <div className="mt-7 flex w-full flex-col gap-3 sm:mt-8 sm:w-auto sm:flex-row">
                 <Link
                   href="/contact"
-                  className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.20)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.30)] sm:h-[54px] sm:w-auto sm:px-7"
+                  className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[9px] font-bold uppercase tracking-[1.3px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.20)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.30)] sm:h-[54px] sm:w-auto sm:px-7"
                 >
                   Start Your Project
                   <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white text-[#151515] transition-transform duration-300 group-hover:rotate-45">
@@ -73,7 +73,7 @@ export default function HeroBanner() {
 
                 <Link
                   href="/portfolio"
-                  className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.035] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-[#E4E0DA] backdrop-blur-md transition-all duration-300 hover:border-[#FF6A00]/40 hover:bg-white/[0.07] sm:h-[54px] sm:w-auto sm:px-7"
+                  className="group flex h-[52px] w-[215px] items-center justify-center gap-3 rounded-full border border-white/10 bg-white/[0.035] px-6 text-[9px] font-bold uppercase tracking-[1.3px] text-[#E4E0DA] backdrop-blur-md transition-all duration-300 hover:border-[#FF6A00]/40 hover:bg-white/[0.07] sm:h-[54px] sm:w-auto sm:px-7"
                 >
                   Explore Our Work
                   <IconArrowRight
@@ -91,7 +91,7 @@ export default function HeroBanner() {
                     className="shrink-0 text-[#FF7900]"
                   />
 
-                  <span className="text-[8px] font-semibold uppercase tracking-[0.6px] text-[#8F8A83] sm:text-[9px] sm:tracking-[0.8px]">
+                  <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#8F8A83] sm:text-[10px] sm:tracking-[1px]">
                     Premium Development
                   </span>
                 </div>
@@ -103,7 +103,7 @@ export default function HeroBanner() {
                     className="shrink-0 text-[#FF7900]"
                   />
 
-                  <span className="text-[8px] font-semibold uppercase tracking-[0.6px] text-[#8F8A83] sm:text-[9px] sm:tracking-[0.8px]">
+                  <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#8F8A83] sm:text-[10px] sm:tracking-[1px]">
                     Strategic Design
                   </span>
                 </div>
@@ -115,7 +115,7 @@ export default function HeroBanner() {
                     className="shrink-0 text-[#FF7900]"
                   />
 
-                  <span className="text-[8px] font-semibold uppercase tracking-[0.6px] text-[#8F8A83] sm:text-[9px] sm:tracking-[0.8px]">
+                  <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#8F8A83] sm:text-[10px] sm:tracking-[1px]">
                     Growth Focused
                   </span>
                 </div>
@@ -124,7 +124,6 @@ export default function HeroBanner() {
 
             <div className="relative mx-auto h-[320px] w-full max-w-[390px] sm:h-[400px] sm:max-w-[500px] lg:h-[520px] lg:max-w-none">
               <div className="absolute left-1/2 top-1/2 h-[250px] w-[250px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FF5A00]/10 blur-[70px] sm:h-[350px] sm:w-[350px] sm:blur-[90px] lg:h-[460px] lg:w-[460px] lg:blur-[100px]" />
-
               <div className="absolute left-1/2 top-1/2 h-[270px] w-[270px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.06] sm:h-[350px] sm:w-[350px] lg:h-[450px] lg:w-[450px]" />
 
               <div className="absolute left-1/2 top-1/2 h-[205px] w-[205px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#FF6800]/20 sm:h-[275px] sm:w-[275px] lg:h-[355px] lg:w-[355px]" />
@@ -146,11 +145,11 @@ export default function HeroBanner() {
                   </div>
 
                   <div>
-                    <p className="text-[7px] font-bold uppercase tracking-[1.2px] text-[#77736D]">
+                    <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#77736D]">
                       Our Approach
                     </p>
 
-                    <p className="mt-1 text-[10px] font-semibold text-white sm:text-[11px]">
+                    <p className="mt-1 text-[12px] font-semibold tracking-[0.1px] text-white sm:text-[13px]">
                       Strategy First
                     </p>
                   </div>
@@ -164,11 +163,11 @@ export default function HeroBanner() {
                   </div>
 
                   <div>
-                    <p className="text-[7px] font-bold uppercase tracking-[1.2px] text-[#77736D]">
+                    <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#77736D]">
                       Technology
                     </p>
 
-                    <p className="mt-1 text-[10px] font-semibold text-white sm:text-[11px]">
+                    <p className="mt-1 text-[12px] font-semibold tracking-[0.1px] text-white sm:text-[13px]">
                       Built To Scale
                     </p>
                   </div>
@@ -182,13 +181,13 @@ export default function HeroBanner() {
               <div className="absolute bottom-[15%] right-[8%] h-1.5 w-1.5 rounded-full bg-[#FF5A00] shadow-[0_0_15px_#FF5A00]" />
 
               <div className="absolute bottom-[-5px] left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-white/10 bg-white/[0.035] px-3 py-2 backdrop-blur-md sm:bottom-0 sm:px-4 sm:py-2.5">
-                <span className="text-[7px] font-bold uppercase tracking-[1.2px] text-[#77736D] sm:text-[8px] sm:tracking-[1.5px]">
+                <span className="text-[9px] font-bold uppercase tracking-[1px] text-[#77736D] sm:text-[10px] sm:tracking-[1.3px]">
                   GlobalTechNext
                 </span>
 
                 <span className="h-1 w-1 rounded-full bg-[#FF6800]" />
 
-                <span className="text-[7px] uppercase tracking-[0.7px] text-[#8E8982] sm:text-[8px] sm:tracking-[1px]">
+                <span className="text-[9px] uppercase tracking-[1px] text-[#8E8982] sm:text-[10px] sm:tracking-[1.3px]">
                   Think · Innovate · Grow
                 </span>
               </div>
@@ -196,7 +195,7 @@ export default function HeroBanner() {
           </div>
 
           <div className="absolute bottom-[-1px] left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full border border-white/10 bg-[#111111] px-4 py-2 md:flex">
-            <span className="text-[8px] font-bold uppercase tracking-[1.8px] text-[#77736D]">
+            <span className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#77736D]">
               Scroll to explore
             </span>
 

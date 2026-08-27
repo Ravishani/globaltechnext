@@ -37,9 +37,8 @@ const projects = [
 
 export default function SelectedWork() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#F5F4F1] py-16 sm:py-20 lg:py-20">
+    <section className="relative w-full overflow-hidden bg-[#F5F4F1] py-10 sm:py-24 lg:py-20">
       <div className="pointer-events-none absolute -right-[180px] -top-[180px] h-[480px] w-[480px] rounded-full bg-[#FF6500]/[0.035] blur-[120px]" />
-
       <div className="pointer-events-none absolute -bottom-[200px] -left-[180px] h-[420px] w-[420px] rounded-full bg-[#FF9A00]/[0.025] blur-[120px]" />
 
       <div className="mx-auto w-full max-w-[1480px] px-5 sm:px-7 lg:px-10">
@@ -48,24 +47,22 @@ export default function SelectedWork() {
             <div className="flex items-center gap-3">
               <span className="h-[2px] w-10 rounded-full bg-[#FF6500]" />
 
-              <span className="text-[8px] font-bold uppercase tracking-[2.5px] text-[#E85D04] sm:text-[9px] sm:tracking-[3px]">
+              <span className="text-[9px] font-bold uppercase tracking-[2px] text-[#E85D04] sm:text-[10px] sm:tracking-[2.5px]">
                 Selected Work
               </span>
             </div>
 
-            <h2 className="mt-6 max-w-[900px] text-[38px] font-[900] leading-[42px] tracking-[-1.8px] text-[#101010] sm:text-[50px] sm:leading-[54px] sm:tracking-[-2.5px] lg:text-[60px] lg:leading-[65px]">
+            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Work that looks
               <span className="block">
-                <span className="text-[#77716A]">
-                  good.
-                </span>{" "}
+                <span className="text-[#77716A]">good.</span>{" "}
                 <span className="bg-gradient-to-r from-[#F04B00] via-[#FF6A00] to-[#FF9800] bg-clip-text text-transparent">
                   Works even better.
                 </span>
               </span>
             </h2>
 
-            <p className="mt-5 max-w-[600px] text-[11px] leading-[20px] text-[#706B65] sm:text-[12px] sm:leading-[22px]">
+            <p className="mt-5 max-w-[600px] text-[13px] leading-[1.75] tracking-[0.09px] text-[#706B65] sm:text-[14px]">
               A selection of digital experiences where strategy, design and
               technology come together to create measurable impact.
             </p>
@@ -73,7 +70,7 @@ export default function SelectedWork() {
 
           <Link
             href="/portfolio"
-            className="group hidden items-center gap-3 pb-1 text-[8px] font-bold uppercase tracking-[1.5px] text-[#4F4A45] transition-colors hover:text-[#E85D04] sm:flex"
+            className="group hidden items-center gap-3 pb-1 text-[9px] font-bold uppercase tracking-[1.4px] text-[#4F4A45] transition-colors hover:text-[#E85D04] sm:flex"
           >
             View All Work
 
@@ -95,7 +92,6 @@ export default function SelectedWork() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#151515] via-[#211E1B] to-[#D94E00] transition-transform duration-700 group-hover:scale-105" />
 
             <div className="absolute left-[15%] top-[12%] h-[220px] w-[220px] rounded-full border border-white/[0.09] sm:h-[320px] sm:w-[320px]" />
-
             <div className="absolute bottom-[-100px] right-[-60px] h-[330px] w-[330px] rounded-full border border-white/[0.08] sm:h-[430px] sm:w-[430px]" />
 
             <div className="absolute left-1/2 top-1/2 flex h-[85px] w-[85px] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-white/10 backdrop-blur-md transition-all duration-500 group-hover:scale-110 group-hover:bg-white/15">
@@ -116,29 +112,27 @@ export default function SelectedWork() {
                   />
                 </span>
 
-                <span className="text-[8px] font-bold uppercase tracking-[1.6px] text-white/70">
+                <span className="text-[9px] font-bold uppercase tracking-[1.5px] text-white/70">
                   Featured Project
                 </span>
               </div>
 
-              <span className="text-[8px] font-bold tracking-[1.5px] text-white/50">
+              <span className="text-[9px] font-bold tracking-[1.4px] text-white/50">
                 01
               </span>
             </div>
 
             <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-8">
-              <span className="text-[8px] font-bold uppercase tracking-[1.7px] text-[#FFAA55]">
+              <span className="text-[9px] font-bold uppercase tracking-[1.6px] text-[#FFAA55]">
                 Web Development
               </span>
 
-              <h3 className="mt-3 text-[30px] font-[900] leading-[33px] tracking-[-1px] text-white sm:text-[40px] sm:leading-[42px]">
+              <h3 className="mt-3 text-[31px] font-black leading-[1.08] tracking-[1px] text-white sm:text-[41px] sm:leading-[1.05]">
                 Digital
-                <span className="block text-white">
-                  Experiences
-                </span>
+                <span className="block">Experiences</span>
               </h3>
 
-              <p className="mt-3 max-w-[480px] text-[10px] leading-[19px] text-white/70 sm:text-[11px] sm:leading-[21px]">
+              <p className="mt-3 max-w-[480px] text-[13px] leading-[1.75] tracking-[0.05px] text-white/70 sm:text-[14px]">
                 High-performance digital experiences designed to help
                 ambitious brands connect, convert and grow.
               </p>
@@ -155,7 +149,7 @@ export default function SelectedWork() {
                 <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#FF6500]/[0.035] blur-[35px] transition-all duration-500 group-hover:bg-[#FF6500]/[0.08]" />
 
                 <div className="relative flex items-start justify-between">
-                  <span className="text-[8px] font-bold tracking-[1.5px] text-[#E85D04]">
+                  <span className="text-[9px] font-bold tracking-[1.4px] text-[#E85D04]">
                     {project.number}
                   </span>
 
@@ -169,15 +163,15 @@ export default function SelectedWork() {
                 </div>
 
                 <div className="relative">
-                  <span className="text-[7px] font-bold uppercase tracking-[1.5px] text-[#E85D04]">
+                  <span className="text-[9px] font-bold uppercase tracking-[1.4px] text-[#E85D04]">
                     {project.category}
                   </span>
 
-                  <h3 className="mt-2 text-[21px] font-[900] tracking-[-0.6px] text-[#121212]">
+                  <h3 className="mt-2 text-[22px] font-black leading-[1.2] tracking-[0.8px] text-[#121212]">
                     {project.title}
                   </h3>
 
-                  <p className="mt-2 max-w-[360px] text-[10px] leading-[18px] text-[#6F6A64] sm:text-[11px] sm:leading-[19px]">
+                  <p className="mt-2 max-w-[360px] text-[13px] leading-[1.7] tracking-[0.05px] text-[#6F6A64] sm:text-[14px]">
                     {project.description}
                   </p>
                 </div>
@@ -187,13 +181,13 @@ export default function SelectedWork() {
         </div>
 
         <div className="mt-7 flex items-center justify-between border-t border-[#111111]/[0.08] pt-5 sm:mt-9 sm:pt-6">
-          <span className="text-[7px] font-bold uppercase tracking-[1.5px] text-[#77716A] sm:text-[8px]">
+          <span className="text-[8px] font-bold uppercase tracking-[1.4px] text-[#77716A] sm:text-[9px]">
             Strategy · Design · Development
           </span>
 
           <Link
             href="/portfolio"
-            className="group flex items-center gap-2 text-[7px] font-bold uppercase tracking-[1.4px] text-[#5D5852] transition-colors hover:text-[#E85D04] sm:text-[8px]"
+            className="group flex items-center gap-2 text-[8px] font-bold uppercase tracking-[1.4px] text-[#5D5852] transition-colors hover:text-[#E85D04] sm:text-[9px]"
           >
             Explore Portfolio
 

@@ -237,9 +237,7 @@ export default function Header() {
             : "border-b border-[#E8E2D8]"
         }`}
       >
-        {/* =====================================================
-            TOP BAR
-        ===================================================== */}
+        {}
         <div className="hidden border-b border-[#3A352E] bg-[#181713] text-[#F7F2E9] lg:block">
           <div className="mx-auto flex h-[40px] max-w-[1480px] items-center justify-between px-5 sm:px-7 lg:px-10">
             <div className="flex items-center gap-5">
@@ -279,7 +277,6 @@ export default function Header() {
 
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-[#FF7200]" />
                 </span>
-
                 Accepting New Projects
               </div>
             </div>
@@ -311,7 +308,6 @@ export default function Header() {
                 className="group flex items-center gap-1.5 text-[9px] font-semibold uppercase tracking-[1.5px] text-[#FF7200] transition duration-300 hover:text-[#F0D89D]"
               >
                 Book a Private Consultation
-
                 <IconArrowUpRight
                   size={14}
                   stroke={1.8}
@@ -322,15 +318,13 @@ export default function Header() {
           </div>
         </div>
 
-        {/* =====================================================
-            MAIN HEADER
-        ===================================================== */}
+        {}
         <div
           className={`mx-auto flex w-full max-w-[1480px] items-center justify-between px-4 transition-all duration-500 sm:px-7 lg:px-10 ${
             scrolled ? "h-[72px] sm:h-[76px]" : "h-[78px] sm:h-[88px]"
           }`}
         >
-          {/* LOGO */}
+          {}
           <Link
             href="/"
             onClick={closeMobileMenu}
@@ -350,15 +344,9 @@ export default function Header() {
             />
           </Link>
 
-          {/* ===================================================
-              DESKTOP NAVIGATION
-          =================================================== */}
+          {}
           <nav className="hidden items-center xl:flex">
-            <DesktopNavLink
-              href="/"
-              title="Home"
-              active={isActive("/")}
-            />
+            <DesktopNavLink href="/" title="Home" active={isActive("/")} />
 
             <DesktopNavLink
               href="/about"
@@ -366,7 +354,7 @@ export default function Header() {
               active={isActive("/about")}
             />
 
-            {/* SERVICES */}
+            {}
             <div
               className="relative"
               onMouseEnter={() => setDesktopServicesOpen(true)}
@@ -374,7 +362,7 @@ export default function Header() {
             >
               <Link
                 href="/services"
-                className={`group relative flex items-center gap-2 px-4 py-3 text-[14px] font-bold tracking-[0.15px] transition-all duration-300 ${
+                className={`group relative flex items-center gap-2 px-4 py-3 text-[14px] font-bold tracking-[0.2px] transition-all duration-300 ${
                   desktopServicesOpen || isActive("/services")
                     ? "text-[#191815]"
                     : "text-[#6B665E] hover:text-[#191815]"
@@ -386,9 +374,7 @@ export default function Header() {
                   size={16}
                   stroke={1.7}
                   className={`transition-transform duration-300 ${
-                    desktopServicesOpen
-                      ? "rotate-180 text-[#FF7200]"
-                      : ""
+                    desktopServicesOpen ? "rotate-180 text-[#FF7200]" : ""
                   }`}
                 />
 
@@ -401,7 +387,7 @@ export default function Header() {
                 />
               </Link>
 
-              {/* DESKTOP SERVICES MENU */}
+              {}
               <div
                 className={`absolute left-1/2 top-[57px] w-[820px] max-w-[calc(100vw-40px)] -translate-x-1/2 pt-5 transition-all duration-300 ${
                   desktopServicesOpen
@@ -425,14 +411,13 @@ export default function Header() {
                           </span>
                         </div>
 
-                        <h3 className="mt-5 max-w-[470px] text-[22px] font-semibold leading-[1.15] tracking-[-0.7px] text-[#191815]">
+                        <h3 className="mt-5 max-w-[470px] text-[22px] font-semibold leading-[1.15] tracking-[-0.5px] text-[#191815]">
                           Digital experiences crafted with precision.
                         </h3>
 
-                        <p className="mt-3 max-w-[460px] text-[11px] leading-5 text-[#81796D]">
-                          Strategy, design, technology and marketing combined
-                          to create refined digital experiences built for
-                          growth.
+                        <p className="mt-3 max-w-[460px] text-[13px] leading-6 tracking-[0.1px] text-[#81796D]">
+                          Strategy, design, technology and marketing combined to
+                          create refined digital experiences built for growth.
                         </p>
 
                         <div className="mt-5 flex items-center gap-2 text-[9px] font-semibold uppercase tracking-[1.4px] text-[#9C8149]">
@@ -462,7 +447,7 @@ export default function Header() {
                           </span>
                         </div>
 
-                        <p className="mt-7 text-[8px] font-semibold uppercase tracking-[2px] text-[#9D9588]">
+                        <p className="mt-7 text-[12px] font-semibold tracking-[0.1px] uppercase tracking-[1.5px] text-[#9D9588]">
                           Featured Service
                         </p>
 
@@ -470,7 +455,7 @@ export default function Header() {
                           Web Development
                         </h4>
 
-                        <p className="mt-2 text-[10px] leading-4 text-[#A9A197]">
+                        <p className="mt-2 text-[12px] leading-5 tracking-[0.1px] text-[#A9A197]">
                           Fast, elegant and scalable digital experiences.
                         </p>
                       </div>
@@ -492,7 +477,7 @@ export default function Header() {
                           </div>
 
                           <div className="min-w-0">
-                            <div className="flex items-center gap-1.5 text-[13px] font-semibold text-[#24221E]">
+                            <div className="flex items-center gap-1.5 text-[13px] font-semibold tracking-[0.1px] text-[#24221E]">
                               <span>{service.title}</span>
 
                               <IconArrowUpRight
@@ -501,7 +486,7 @@ export default function Header() {
                               />
                             </div>
 
-                            <p className="mt-1.5 text-[10px] leading-5 text-[#8A8378]">
+                            <p className="mt-1.5 text-[12px] leading-5 tracking-[0.1px] text-[#8A8378]">
                               {service.description}
                             </p>
                           </div>
@@ -517,11 +502,11 @@ export default function Header() {
                       </div>
 
                       <div className="min-w-0">
-                        <p className="text-[11px] font-semibold text-[#292721]">
+                        <p className="text-[13px] font-semibold tracking-[0.1px] tracking-[0.1px] text-[#292721]">
                           Need something more tailored?
                         </p>
 
-                        <p className="mt-0.5 text-[9px] text-[#948C80]">
+                        <p className="mt-0.5 text-[11px] leading-5 tracking-[0.2px] text-[#948C80]">
                           Let&apos;s discuss your unique requirements.
                         </p>
                       </div>
@@ -532,7 +517,6 @@ export default function Header() {
                       className="group flex shrink-0 items-center gap-2 rounded-full bg-[#1B1A17] px-4 py-2.5 text-[9px] font-bold uppercase tracking-[0.7px] text-[#F6F0E5] transition-all duration-300 hover:bg-[#292721]"
                     >
                       Explore Services
-
                       <IconArrowUpRight
                         size={12}
                         className="text-[#FF7200] transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -562,9 +546,7 @@ export default function Header() {
             />
           </nav>
 
-          {/* ===================================================
-              RIGHT ACTIONS
-          =================================================== */}
+          {}
           <div className="flex shrink-0 items-center gap-2">
             <div className="hidden items-center gap-2 xl:flex">
               <a
@@ -595,7 +577,7 @@ export default function Header() {
               </span>
             </Link>
 
-            {/* MOBILE MENU BUTTON */}
+            {}
             <button
               type="button"
               onClick={toggleMobileMenu}
@@ -610,9 +592,7 @@ export default function Header() {
         </div>
       </header>
 
-      {/* =====================================================
-          MOBILE MENU PORTAL
-      ===================================================== */}
+      {}
       {mounted &&
         createPortal(
           <div
@@ -623,7 +603,7 @@ export default function Header() {
             }`}
             aria-hidden={!mobileOpen}
           >
-            {/* BACKDROP */}
+            {}
             <button
               type="button"
               aria-label="Close navigation"
@@ -633,19 +613,15 @@ export default function Header() {
               }`}
             />
 
-            {/* =================================================
-                MOBILE DRAWER
-            ================================================= */}
+            {}
             <aside
               id="mobile-navigation"
               aria-hidden={!mobileOpen}
               className={`fixed right-0 top-0 z-[100000] h-[100dvh] w-[min(390px,88vw)] max-w-full overflow-hidden border-l border-[#DED6C8] bg-[#FDFCF9] shadow-[-25px_0_80px_rgba(25,22,18,0.22)] transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                mobileOpen
-                  ? "translate-x-0"
-                  : "translate-x-full"
+                mobileOpen ? "translate-x-0" : "translate-x-full"
               }`}
             >
-              {/* DRAWER HEADER */}
+              {}
               <div className="flex h-[76px] shrink-0 items-center justify-between border-b border-[#E4DED4] bg-[#FDFCF9] px-5">
                 <Link
                   href="/"
@@ -662,7 +638,7 @@ export default function Header() {
                   />
                 </Link>
 
-                {/* ONE CLOSE BUTTON ONLY */}
+                {}
                 <button
                   type="button"
                   onClick={closeMobileMenu}
@@ -673,22 +649,18 @@ export default function Header() {
                 </button>
               </div>
 
-              {/* DRAWER BODY */}
+              {}
               <div className="relative h-[calc(100dvh-76px)] min-h-0 w-full overflow-hidden">
-                {/* =================================================
-                    MAIN MOBILE PANEL
-                ================================================= */}
+                {}
                 <div
                   className={`absolute inset-0 h-full w-full overflow-x-hidden overflow-y-auto overscroll-contain px-5 py-5 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                    mobileServicesOpen
-                      ? "-translate-x-full"
-                      : "translate-x-0"
+                    mobileServicesOpen ? "-translate-x-full" : "translate-x-0"
                   }`}
                   style={{
                     WebkitOverflowScrolling: "touch",
                   }}
                 >
-                  {/* INTRO CARD */}
+                  {}
                   <div className="mb-5 w-full max-w-full overflow-hidden rounded-[24px] bg-[#1B1A17] p-5 text-white shadow-[0_15px_45px_rgba(27,26,23,0.12)]">
                     <div className="relative min-w-0">
                       <div className="absolute -right-16 -top-16 h-40 w-40 rounded-full border border-[#FF7200]/10" />
@@ -703,15 +675,15 @@ export default function Header() {
                             </span>
                           </div>
 
-                          <h3 className="mt-3 text-[18px] font-semibold leading-[1.2] tracking-[-0.3px]">
+                          <h3 className="mt-3 text-[16px] font-semibold leading-5 tracking-[1px]">
                             Digital excellence,
                             <br />
                             thoughtfully crafted.
                           </h3>
 
-                          <p className="mt-2 max-w-[260px] text-[10px] leading-5 text-[#9D968A]">
-                            Premium digital solutions designed to move
-                            ambitious businesses forward.
+                          <p className="mt-2 max-w-[260px] text-[13px] leading-5 tracking-[0.1px] text-[#9D968A]">
+                            Premium digital solutions designed to move ambitious
+                            businesses forward.
                           </p>
                         </div>
 
@@ -724,7 +696,7 @@ export default function Header() {
                       <div className="mt-5 grid grid-cols-2 gap-2">
                         <a
                           href="mailto:info@globaltechnext.com"
-                          className="flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-3 text-[10px] font-semibold text-[#D2CBC0] transition hover:bg-white/10 hover:text-white"
+                          className="flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-3 text-[12px] font-semibold tracking-[0.1px] text-[#D2CBC0] transition hover:bg-white/10 hover:text-white tracking-[1px]"
                         >
                           <IconMail size={14} />
                           <span>Email Us</span>
@@ -732,7 +704,7 @@ export default function Header() {
 
                         <a
                           href="tel:+919555787844"
-                          className="flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-3 text-[10px] font-semibold text-[#D2CBC0] transition hover:bg-white/10 hover:text-white"
+                          className="flex min-w-0 items-center justify-center gap-2 rounded-xl border border-white/10 bg-white/[0.05] px-3 py-3 text-[12px] font-semibold tracking-[0.1px] text-[#D2CBC0] transition hover:bg-white/10 hover:text-white tracking-[1px]"
                         >
                           <IconPhone size={14} />
                           <span>Call Us</span>
@@ -741,9 +713,9 @@ export default function Header() {
                     </div>
                   </div>
 
-                  {/* NAVIGATION */}
+                  {}
                   <div className="mb-5">
-                    <p className="px-1 text-[8px] font-bold uppercase tracking-[1.8px] text-[#A0988C]">
+                    <p className="px-1 text-[9px] font-bold uppercase tracking-[1.5px] text-[#A0988C]">
                       Navigation
                     </p>
 
@@ -764,10 +736,7 @@ export default function Header() {
                               <span>Services</span>
 
                               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#1B1A17] text-[#FF7200]">
-                                <IconArrowUpRight
-                                  size={16}
-                                  stroke={1.8}
-                                />
+                                <IconArrowUpRight size={16} stroke={1.8} />
                               </span>
                             </button>
                           );
@@ -797,10 +766,7 @@ export default function Header() {
                                   : "bg-[#F2EEE6] text-[#938979]"
                               }`}
                             >
-                              <IconArrowUpRight
-                                size={16}
-                                stroke={1.7}
-                              />
+                              <IconArrowUpRight size={16} stroke={1.7} />
                             </span>
                           </Link>
                         );
@@ -808,36 +774,36 @@ export default function Header() {
                     </div>
                   </div>
 
-                  {/* STATS */}
+                  {}
                   <div className="grid w-full grid-cols-3 gap-2">
                     {stats.map((stat) => (
                       <div
                         key={stat.label}
                         className="min-w-0 rounded-[17px] border border-[#E3DDD2] bg-[#FBFAF7] p-3 text-center"
                       >
-                        <p className="text-[17px] font-semibold tracking-tight text-[#1B1A17]">
+                        <p className="text-[17px] font-semibold tracking-[-0.2px] text-[#1B1A17]">
                           {stat.value}
                         </p>
 
-                        <p className="mt-1 text-[7px] font-bold uppercase leading-3 tracking-[0.5px] text-[#9B9285]">
+                        <p className="mt-1 text-[8px] font-bold uppercase leading-4 tracking-[0.7px] text-[#9B9285]">
                           {stat.label}
                         </p>
                       </div>
                     ))}
                   </div>
 
-                  {/* START PROJECT */}
+                  {}
                   <Link
                     href="/contact"
                     onClick={closeMobileMenu}
                     className="group mt-4 flex w-full items-center justify-between gap-3 rounded-[20px] bg-[#1B1A17] px-5 py-4 text-white shadow-[0_12px_30px_rgba(27,26,23,0.12)]"
                   >
                     <div className="min-w-0">
-                      <p className="text-[13px] font-semibold">
+                      <p className="text-[13px] font-semibold tracking-[0.1px]">
                         Start a Project
                       </p>
 
-                      <p className="mt-1 text-[9px] text-[#9D968A]">
+                      <p className="mt-1 text-[11px] leading-5 tracking-[0.2px] text-[#9D968A]">
                         Let&apos;s create something exceptional.
                       </p>
                     </div>
@@ -847,14 +813,14 @@ export default function Header() {
                     </span>
                   </Link>
 
-                  {/* WHY US */}
+                  {}
                   <div className="mt-5 w-full rounded-[20px] border border-[#E3DDD2] bg-[#F5F0E7] p-4">
                     <div className="flex items-center gap-2">
                       <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-[#1B1A17] text-[#FF7200]">
                         <IconSparkles size={14} />
                       </span>
 
-                      <p className="text-[8px] font-bold uppercase tracking-[1.5px] text-[#766E62]">
+                      <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#766E62]">
                         Why GlobalTechNext
                       </p>
                     </div>
@@ -882,15 +848,15 @@ export default function Header() {
                     </div>
                   </div>
 
-                  {/* SOCIAL */}
+                  {}
                   <div className="mt-5 border-t border-[#E4DDD2] pt-5">
                     <div className="flex items-center justify-between gap-3">
                       <div className="min-w-0">
-                        <p className="text-[8px] font-bold uppercase tracking-[1.8px] text-[#A0988C]">
+                        <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#A0988C]">
                           Follow Us
                         </p>
 
-                        <p className="mt-1 text-[10px] font-semibold text-[#4B463E]">
+                        <p className="mt-1 text-[12px] font-semibold tracking-[0.1px] text-[#4B463E]">
                           Connect with us
                         </p>
                       </div>
@@ -919,20 +885,16 @@ export default function Header() {
                   <div className="h-8" />
                 </div>
 
-                {/* =================================================
-                    MOBILE SERVICES PANEL
-                ================================================= */}
+                {}
                 <div
                   className={`absolute inset-0 h-full w-full overflow-x-hidden overflow-y-auto overscroll-contain bg-[#FDFCF9] px-5 py-5 transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
-                    mobileServicesOpen
-                      ? "translate-x-0"
-                      : "translate-x-full"
+                    mobileServicesOpen ? "translate-x-0" : "translate-x-full"
                   }`}
                   style={{
                     WebkitOverflowScrolling: "touch",
                   }}
                 >
-                  {/* SERVICES HEADER */}
+                  {}
                   <div className="mb-5 flex items-center gap-3 border-b border-[#E4DED4] pb-4">
                     <button
                       type="button"
@@ -944,28 +906,28 @@ export default function Header() {
                     </button>
 
                     <div className="min-w-0">
-                      <p className="text-[8px] font-bold uppercase tracking-[1.7px] text-[#A0988C]">
+                      <p className="text-[9px] font-bold uppercase tracking-[1.5px] text-[#A0988C]">
                         Navigation
                       </p>
 
-                      <p className="mt-0.5 text-[14px] font-semibold text-[#1B1A17]">
+                      <p className="mt-0.5 text-[14px] font-semibold tracking-[0.1px] text-[#1B1A17]">
                         Services
                       </p>
                     </div>
                   </div>
 
-                  {/* ALL SERVICES */}
+                  {}
                   <Link
                     href="/services"
                     onClick={closeMobileMenu}
                     className="mb-3 flex w-full items-center justify-between gap-3 rounded-[18px] border border-[#E2DACE] bg-[#F5F0E7] px-4 py-3.5"
                   >
                     <div className="min-w-0">
-                      <p className="text-[11px] font-semibold text-[#1B1A17]">
+                      <p className="text-[13px] font-semibold tracking-[0.1px] text-[#1B1A17]">
                         All Services
                       </p>
 
-                      <p className="mt-0.5 text-[8px] text-[#8D8579]">
+                      <p className="mt-0.5 text-[11px] leading-5 tracking-[0.1px] text-[#8D8579]">
                         Explore our complete expertise
                       </p>
                     </div>
@@ -975,7 +937,7 @@ export default function Header() {
                     </span>
                   </Link>
 
-                  {/* SERVICES LIST */}
+                  {}
                   <div className="w-full space-y-2">
                     {services.map((service) => {
                       const ServiceIcon = service.icon;
@@ -992,27 +954,24 @@ export default function Header() {
                           </div>
 
                           <div className="min-w-0 flex-1">
-                            <p className="truncate text-[11px] font-semibold text-[#39352F]">
+                            <p className="truncate text-[12px] font-semibold tracking-[0.1px] text-[#39352F]">
                               {service.title}
                             </p>
 
-                            <p className="mt-1 text-[8px] leading-4 text-[#938B7E]">
+                            <p className="mt-1 text-[11px] leading-5 tracking-[0.1px] text-[#938B7E]">
                               {service.description}
                             </p>
                           </div>
 
                           <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[#F2EEE6] text-[#938979] transition-all group-hover:bg-[#1B1A17] group-hover:text-[#FF7200]">
-                            <IconArrowUpRight
-                              size={16}
-                              stroke={1.7}
-                            />
+                            <IconArrowUpRight size={16} stroke={1.7} />
                           </span>
                         </Link>
                       );
                     })}
                   </div>
 
-                  {/* CUSTOM SOLUTION */}
+                  {}
                   <div className="mt-5 w-full rounded-[20px] border border-[#E3DDD2] bg-[#1B1A17] p-4 text-white">
                     <div className="flex items-center gap-2">
                       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#FF7200] text-[#1B1A17]">
@@ -1020,11 +979,11 @@ export default function Header() {
                       </span>
 
                       <div className="min-w-0">
-                        <p className="text-[10px] font-semibold">
+                        <p className="text-[12px] font-semibold tracking-[0.1px]">
                           Need a custom solution?
                         </p>
 
-                        <p className="mt-0.5 text-[8px] text-[#9D968A]">
+                        <p className="mt-0.5 text-[11px] leading-5 tracking-[0.1px] text-[#9D968A]">
                           Let&apos;s discuss your requirements.
                         </p>
                       </div>
@@ -1036,7 +995,6 @@ export default function Header() {
                       className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[#FF7200] px-4 py-3 text-[9px] font-bold uppercase tracking-[1px] text-[#1B1A17]"
                     >
                       Start a Conversation
-
                       <IconArrowUpRight size={16} />
                     </Link>
                   </div>
@@ -1046,7 +1004,7 @@ export default function Header() {
               </div>
             </aside>
           </div>,
-          document.body
+          document.body,
         )}
     </>
   );
@@ -1056,10 +1014,8 @@ function DesktopNavLink({ href, title, active }) {
   return (
     <Link
       href={href}
-      className={`group relative px-4 py-3 text-[14px] font-bold tracking-[0.15px] transition-all duration-300 ${
-        active
-          ? "text-[#1B1A17]"
-          : "text-[#6B665E] hover:text-[#1B1A17]"
+      className={`group relative px-4 py-3 text-[14px] font-bold tracking-[0.2px] transition-all duration-300 ${
+        active ? "text-[#1B1A17]" : "text-[#6B665E] hover:text-[#1B1A17]"
       }`}
     >
       {title}

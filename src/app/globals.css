@@ -44,3 +44,38 @@ body {
     margin: 0;
     padding: 0;
 }
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better typography without changing existing font sizes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-rendering: optimizeLegibility;
+}
+
+/* Improve readability of normal text */
+p {
+  text-wrap: pretty;
+}
+
+/* Better uppercase typography */
+.uppercase {
+  letter-spacing: 0.10em;
+}
+
+/* Better buttons and navigation */
+button,
+nav a {
+  text-rendering: optimizeLegibility;
+}

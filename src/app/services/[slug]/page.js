@@ -15,12 +15,10 @@ import {
   IconSearch,
   IconSparkles,
   IconShieldCheck,
-  IconChartBar,
   IconShoppingCart,
   IconDatabase,
   IconApi,
   IconPalette,
-  IconSettings,
   IconBulb,
   IconCircleCheck,
   IconPlus,
@@ -38,7 +36,6 @@ const services = {
     overview:
       "Your website is more than an online brochure. We build digital experiences that communicate your brand, create trust and help turn visitors into customers.",
   },
-
   "web-application": {
     number: "02",
     label: "Web Applications",
@@ -50,7 +47,6 @@ const services = {
     overview:
       "From internal business systems to customer-facing platforms, we build secure and scalable applications designed around the way your business works.",
   },
-
   "ui-ux-design": {
     number: "03",
     label: "UI / UX Design",
@@ -62,7 +58,6 @@ const services = {
     overview:
       "We combine research, strategy and visual design to create interfaces that feel natural for users while supporting your business objectives.",
   },
-
   "digital-solutions": {
     number: "04",
     label: "Digital Solutions",
@@ -269,7 +264,6 @@ const faqs = [
 
 export default function ServiceDetailsPage({ params }) {
   const { slug } = use(params);
-
   const service = services[slug] || services["web-development"];
 
   return (
@@ -287,25 +281,19 @@ export default function ServiceDetailsPage({ params }) {
   );
 }
 
-/* =========================================================
-   HERO
-========================================================= */
-
 function ServiceHero({ service }) {
   return (
     <section className="relative overflow-hidden bg-[#080808] text-white">
       <div className="pointer-events-none absolute left-[-220px] top-[120px] h-[450px] w-[450px] rounded-full bg-[#FF5A00]/[0.07] blur-[140px]" />
-
       <div className="pointer-events-none absolute right-[-180px] top-[-180px] h-[480px] w-[480px] rounded-full bg-[#FF9800]/[0.06] blur-[140px]" />
-
       <div className="pointer-events-none absolute inset-0 opacity-[0.018] [background-image:linear-gradient(rgba(255,255,255,0.8)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.8)_1px,transparent_1px)] [background-size:80px_80px]" />
 
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
-        <div className="grid min-h-[650px] items-center gap-12 py-20 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:py-20">
+        <div className="grid min-h-[650px] items-center gap-12 py-10 sm:py-24 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14 lg:py-20">
           <div className="relative z-10 max-w-[820px]">
             <Link
               href="/services"
-              className="mb-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[2px] text-[#77716A] transition-colors hover:text-[#FF7900]"
+              className="mb-8 inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-[1.8px] text-[#77716A] transition-colors hover:text-[#FF7900]"
             >
               <IconArrowRight
                 size={14}
@@ -317,28 +305,26 @@ function ServiceHero({ service }) {
 
             <div className="mb-6 flex items-center gap-3">
               <span className="h-px w-10 bg-[#FF6500]" />
-
-              <span className="text-[11px] font-bold uppercase tracking-[2.5px] text-[#FF7900]">
+              <span className="text-[13px] font-bold uppercase tracking-[2.2px] text-[#FF7900]">
                 {service.eyebrow}
               </span>
             </div>
 
-            <h1 className="text-[48px] font-[900] leading-[49px] tracking-[-3px] sm:text-[65px] sm:leading-[64px] lg:text-[60px] lg:leading-[78px] lg:tracking-[-4.5px]">
+            <h1 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               {service.title}
-
               <span className="block bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
                 {service.highlight}
               </span>
             </h1>
 
-            <p className="mt-7 max-w-[650px] text-[15px] leading-[25px] text-[#8A847D] sm:text-[16px] sm:leading-[27px]">
+            <p className="mt-7 max-w-[650px] text-[13px] leading-7 tracking-[0.1px] text-[#8A847D] sm:text-[15px]">
               {service.description}
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
                 href="/contact"
-                className="group flex h-[56px] w-full items-center justify-between rounded-full bg-white px-6 text-[11px] font-bold uppercase tracking-[1.4px] text-[#111] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF6500] hover:text-white sm:w-[215px]"
+                className="group flex h-[56px] w-full items-center justify-between rounded-full bg-white px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-[#111] transition-all duration-300 hover:-translate-y-1 hover:bg-[#FF6500] hover:text-white sm:w-[215px]"
               >
                 Start A Project
 
@@ -353,7 +339,7 @@ function ServiceHero({ service }) {
 
               <Link
                 href="/portfolio"
-                className="group flex h-[56px] w-full items-center justify-center gap-3 rounded-full border border-white/[0.1] px-6 text-[11px] font-bold uppercase tracking-[1.4px] text-[#AAA49D] transition-all duration-300 hover:border-[#FF6500]/30 hover:bg-white/[0.03] hover:text-white sm:w-[190px]"
+                className="group flex h-[56px] w-full items-center justify-center gap-3 rounded-full border border-white/[0.1] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-[#AAA49D] transition-all duration-300 hover:border-[#FF6500]/30 hover:bg-white/[0.03] hover:text-white sm:w-[190px]"
               >
                 Explore Work
 
@@ -383,7 +369,7 @@ function ServiceHero({ service }) {
               <IconCode size={36} stroke={1.2} />
             </div>
 
-            <span className="absolute left-[4%] top-[12%] text-[90px] font-[900] leading-none tracking-[-7px] text-white/[0.035] sm:text-[120px]">
+            <span className="absolute left-[4%] top-[12%] text-[90px] font-[900] leading-none tracking-[-6px] text-white/[0.035] sm:text-[120px]">
               {service.number}
             </span>
 
@@ -402,9 +388,7 @@ function ServiceHero({ service }) {
             />
 
             <span className="absolute left-[18%] top-[31%] h-2 w-2 rounded-full bg-[#FF7900] shadow-[0_0_15px_#FF7900]" />
-
             <span className="absolute right-[17%] top-[27%] h-2 w-2 rounded-full bg-[#FFB000] shadow-[0_0_18px_#FFB000]" />
-
             <span className="absolute bottom-[25%] right-[8%] h-2 w-2 rounded-full bg-[#FF6500] shadow-[0_0_14px_#FF6500]" />
           </div>
         </div>
@@ -426,11 +410,11 @@ function HeroFloatingCard({ position, icon, label, value }) {
         </span>
 
         <div>
-          <p className="text-[8px] font-bold uppercase tracking-[1.5px] text-[#57514B]">
+          <p className="text-[10px] font-bold uppercase tracking-[1.3px] text-[#57514B]">
             {label}
           </p>
 
-          <p className="mt-1 text-[12px] font-semibold text-white">
+          <p className="mt-1 text-[14px] font-semibold tracking-[0.1px] text-white">
             {value}
           </p>
         </div>
@@ -444,26 +428,22 @@ function HeroPoint({ text }) {
     <div className="flex items-center gap-2">
       <IconCheck size={15} stroke={2} className="text-[#FF7200]" />
 
-      <span className="text-[10px] font-semibold uppercase tracking-[0.8px] text-[#716B65] sm:text-[11px]">
+      <span className="text-[10px] font-semibold uppercase tracking-[0.7px] text-[#716B65]">
         {text}
       </span>
     </div>
   );
 }
 
-/* =========================================================
-   OVERVIEW
-========================================================= */
-
 function ServiceOverview({ service }) {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-24">
+    <section className="bg-white py-10 sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
           <div>
             <SectionLabel text="Service Overview" />
 
-            <h2 className="mt-6 text-[38px] font-[900] leading-[41px] tracking-[-2px] text-[#111] sm:text-[48px] sm:leading-[50px]">
+            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               More than a website.
               <span className="block text-[#A09A93]">
                 A digital growth engine.
@@ -472,14 +452,28 @@ function ServiceOverview({ service }) {
           </div>
 
           <div>
-            <p className="max-w-[850px] text-[17px] leading-[29px] text-[#625D57] sm:text-[19px] sm:leading-[32px]">
+            <p className="max-w-[850px] text-[13px] leading-7 tracking-[0.1px] text-[#625D57] sm:text-[15px]">
               {service.overview}
             </p>
 
             <div className="mt-9 grid gap-3 sm:grid-cols-3">
-              <OverviewStat number="01" title="Strategy" text="Built around your goals" />
-              <OverviewStat number="02" title="Experience" text="Designed for real users" />
-              <OverviewStat number="03" title="Technology" text="Ready for future growth" />
+              <OverviewStat
+                number="01"
+                title="Strategy"
+                text="Built around your goals"
+              />
+
+              <OverviewStat
+                number="02"
+                title="Experience"
+                text="Designed for real users"
+              />
+
+              <OverviewStat
+                number="03"
+                title="Technology"
+                text="Ready for future growth"
+              />
             </div>
           </div>
         </div>
@@ -491,28 +485,24 @@ function ServiceOverview({ service }) {
 function OverviewStat({ number, title, text }) {
   return (
     <div className="rounded-2xl border border-black/[0.07] bg-[#FAFAF9] p-5">
-      <span className="text-[10px] font-bold tracking-[1.5px] text-[#FF6500]">
+      <span className="text-[11px] font-bold tracking-[1.3px] text-[#FF6500]">
         {number}
       </span>
 
-      <h3 className="mt-6 text-[17px] font-[900] text-[#171717]">
+      <h3 className="mt-6 text-[18px] font-[900] tracking-[0.4px] text-[#171717]">
         {title}
       </h3>
 
-      <p className="mt-2 text-[12px] leading-[19px] text-[#858078]">
+      <p className="mt-2 text-[13px] leading-[1.6] tracking-[0.05px] text-[#858078]">
         {text}
       </p>
     </div>
   );
 }
 
-/* =========================================================
-   CAPABILITIES
-========================================================= */
-
 function Capabilities() {
   return (
-    <section className="relative overflow-hidden bg-[#F5F4F2] py-16 sm:py-20 lg:py-24">
+    <section className="relative overflow-hidden bg-[#F5F4F2] py-10 sm:py-24 lg:py-20">
       <div className="pointer-events-none absolute right-[-180px] top-[-160px] h-[400px] w-[400px] rounded-full bg-[#FF6500]/[0.04] blur-[120px]" />
 
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
@@ -520,13 +510,16 @@ function Capabilities() {
           <div>
             <SectionLabel text="What We Do" dark />
 
-            <h2 className="mt-6 max-w-[700px] text-[39px] font-[900] leading-[42px] tracking-[-2px] text-[#111] sm:text-[50px] sm:leading-[53px]">
+            <h2 className="mt-6 max-w-[700px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Everything your
-              <span className="text-[#9B958E]"> digital presence needs.</span>
+              <span className="text-[#9B958E]">
+                {" "}
+                digital presence needs.
+              </span>
             </h2>
           </div>
 
-          <p className="max-w-[430px] text-[14px] leading-[23px] text-[#77716A]">
+          <p className="max-w-[430px] text-[13px] leading-7 tracking-[0.1px] text-[#77716A] sm:text-[15px]">
             From strategy and design to development, integrations and
             optimisation, we handle the important pieces needed to create a
             strong digital product.
@@ -545,7 +538,7 @@ function Capabilities() {
                 <div className="absolute right-[-30px] top-[-30px] h-[120px] w-[120px] rounded-full bg-[#FF6500]/[0.04] blur-[35px] transition-all group-hover:bg-[#FF6500]/[0.1]" />
 
                 <div className="relative flex items-center justify-between">
-                  <span className="text-[10px] font-bold tracking-[1.5px] text-[#FF6500]">
+                  <span className="text-[11px] font-bold tracking-[1.3px] text-[#FF6500]">
                     {item.number}
                   </span>
 
@@ -555,17 +548,17 @@ function Capabilities() {
                 </div>
 
                 <div className="relative mt-9">
-                  <h3 className="text-[16px] font-[900] text-[#191817]">
+                  <h3 className="text-[18px] font-[900] tracking-[-0.2px] text-[#191817]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-3 text-[12px] leading-[19px] text-[#858078]">
+                  <p className="mt-3 text-[13px] leading-[1.6] tracking-[0.05px] text-[#858078]">
                     {item.description}
                   </p>
                 </div>
 
                 <div className="relative mt-5 flex items-center justify-between border-t border-black/[0.06] pt-4">
-                  <span className="text-[9px] font-bold uppercase tracking-[1.2px] text-[#AAA49D]">
+                  <span className="text-[10px] font-bold uppercase tracking-[1px] text-[#AAA49D]">
                     Capability
                   </span>
 
@@ -583,20 +576,19 @@ function Capabilities() {
   );
 }
 
-/* =========================================================
-   DETAILED SERVICES
-========================================================= */
-
 function DetailedServices() {
   return (
-    <section className="bg-white py-16 sm:py-20 lg:py-28">
+    <section className="bg-white py-10 sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="mb-12">
           <SectionLabel text="Our Expertise" />
 
-          <h2 className="mt-6 max-w-[800px] text-[39px] font-[900] leading-[42px] tracking-[-2px] text-[#111] sm:text-[52px] sm:leading-[54px]">
+          <h2 className="mt-6 max-w-[800px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
             A complete approach
-            <span className="text-[#9B958E]"> from idea to launch.</span>
+            <span className="text-[#9B958E]">
+              {" "}
+              from idea to launch.
+            </span>
           </h2>
         </div>
 
@@ -610,7 +602,7 @@ function DetailedServices() {
                 className="group grid gap-7 rounded-[24px] border border-black/[0.07] bg-[#FAFAF9] p-6 transition-all duration-300 hover:border-[#FF6500]/20 hover:bg-white sm:p-8 lg:grid-cols-[90px_0.8fr_1fr] lg:gap-12 lg:p-10"
               >
                 <div className="flex items-start justify-between lg:block">
-                  <span className="text-[11px] font-bold tracking-[1.5px] text-[#FF6500]">
+                  <span className="text-[12px] font-bold tracking-[1.4px] text-[#FF6500]">
                     {item.number}
                   </span>
 
@@ -620,11 +612,11 @@ function DetailedServices() {
                 </div>
 
                 <div>
-                  <h3 className="text-[24px] font-[900] tracking-[-0.8px] text-[#151515] sm:text-[27px]">
+                  <h3 className="text-[25px] font-[900] tracking-[-0.6px] text-[#151515] sm:text-[28px]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-4 max-w-[500px] text-[14px] leading-[23px] text-[#77716A] sm:text-[15px] sm:leading-[25px]">
+                  <p className="mt-4 max-w-[500px] text-[15px] leading-[1.7] tracking-[0.05px] text-[#77716A] sm:text-[16px]">
                     {item.text}
                   </p>
                 </div>
@@ -640,7 +632,7 @@ function DetailedServices() {
                         className="shrink-0 text-[#FF6500]"
                       />
 
-                      <span className="text-[12px] font-semibold text-[#4D4843]">
+                      <span className="text-[13px] font-semibold tracking-[0.05px] text-[#4D4843]">
                         {point}
                       </span>
                     </div>
@@ -655,26 +647,22 @@ function DetailedServices() {
   );
 }
 
-/* =========================================================
-   BENEFITS
-========================================================= */
-
 function Benefits() {
   return (
-    <section className="bg-[#111] py-16 text-white sm:py-20 lg:py-24">
+    <section className="bg-[#111] py-10 text-white sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
             <SectionLabel text="Why Choose Us" />
 
-            <h2 className="mt-6 text-[39px] font-[900] leading-[42px] tracking-[-2px] sm:text-[50px] sm:leading-[53px]">
+            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Built with
               <span className="block text-[#55504B]">
                 business in mind.
               </span>
             </h2>
 
-            <p className="mt-6 max-w-[450px] text-[14px] leading-[24px] text-[#77716A]">
+            <p className="mt-6 max-w-[450px] text-[13px] leading-7 tracking-[0.1px] text-[#77716A] sm:text-[15px]">
               We do not build technology for technology's sake. Every decision
               is made with usability, performance, scalability and business
               value in mind.
@@ -692,11 +680,11 @@ function Benefits() {
                 </span>
 
                 <div>
-                  <span className="text-[9px] font-bold tracking-[1.2px] text-[#FF6500]">
+                  <span className="text-[10px] font-bold tracking-[1.1px] text-[#FF6500]">
                     {String(index + 1).padStart(2, "0")}
                   </span>
 
-                  <p className="mt-1 text-[13px] font-semibold leading-[20px] text-[#D5D0CA]">
+                  <p className="mt-1 text-[14px] font-semibold leading-[1.5] tracking-[0.05px] text-[#D5D0CA]">
                     {benefit}
                   </p>
                 </div>
@@ -709,19 +697,15 @@ function Benefits() {
   );
 }
 
-/* =========================================================
-   STATEMENT
-========================================================= */
-
 function BigStatement() {
   return (
-    <section className="bg-[#F1F0EE] py-16 sm:py-20 lg:py-28">
+    <section className="bg-[#F1F0EE] py-10 sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="grid gap-8 lg:grid-cols-[200px_1fr] lg:gap-14">
           <SectionLabel text="Our Belief" />
 
           <div>
-            <h2 className="max-w-[1100px] text-[34px] font-[900] leading-[38px] tracking-[-1.8px] text-[#171717] sm:text-[46px] sm:leading-[50px] lg:text-[57px] lg:leading-[60px]">
+            <h2 className="max-w-[1100px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#171717] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Technology should make your business
               <span className="text-[#9B958E]">
                 {" "}
@@ -746,32 +730,28 @@ function StatementPoint({ text }) {
     <div className="flex items-center gap-2.5">
       <span className="h-2 w-2 rounded-full bg-[#FF6500]" />
 
-      <span className="text-[11px] font-bold uppercase tracking-[0.8px] text-[#77716A]">
+      <span className="text-[12px] font-bold uppercase tracking-[0.7px] text-[#77716A]">
         {text}
       </span>
     </div>
   );
 }
 
-/* =========================================================
-   PROCESS
-========================================================= */
-
 function Process() {
   return (
-    <section className="bg-[#080808] py-16 text-white sm:py-20 lg:py-28">
+    <section className="bg-[#080808] py-10 text-white sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="mb-12 flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
           <div>
             <SectionLabel text="Our Process" />
 
-            <h2 className="mt-6 text-[39px] font-[900] leading-[42px] tracking-[-2px] sm:text-[51px] sm:leading-[54px]">
+            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Simple process.
               <span className="text-[#55504B]"> Strong results.</span>
             </h2>
           </div>
 
-          <p className="max-w-[410px] text-[14px] leading-[24px] text-[#6B655F]">
+          <p className="max-w-[410px] text-[13px] leading-7 tracking-[0.1px] text-[#6B655F] sm:text-[15px]">
             A structured workflow keeps projects clear, efficient and focused
             on delivering the right outcome.
           </p>
@@ -788,18 +768,18 @@ function Process() {
               }`}
             >
               <div className="flex items-center justify-between">
-                <span className="text-[10px] font-bold tracking-[1.5px] text-[#FF6500]">
+                <span className="text-[11px] font-bold tracking-[1.4px] text-[#FF6500]">
                   {item.number}
                 </span>
 
                 <span className="h-2 w-2 rounded-full bg-[#292622] transition-colors group-hover:bg-[#FF6500]" />
               </div>
 
-              <h3 className="mt-8 text-[18px] font-[800] text-white">
+              <h3 className="mt-8 text-[19px] font-[800] tracking-[-0.2px] text-white">
                 {item.title}
               </h3>
 
-              <p className="mt-3 text-[12px] leading-[20px] text-[#68625C]">
+              <p className="mt-3 text-[13px] leading-[1.65] tracking-[0.05px] text-[#68625C]">
                 {item.text}
               </p>
             </div>
@@ -810,26 +790,22 @@ function Process() {
   );
 }
 
-/* =========================================================
-   TECHNOLOGY
-========================================================= */
-
 function Technology() {
   return (
-    <section className="bg-white py-16 text-[#111] sm:py-20 lg:py-28">
+    <section className="bg-white py-10 text-[#111] sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="grid gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-20">
           <div>
             <SectionLabel text="Technology" dark />
 
-            <h2 className="mt-6 text-[39px] font-[900] leading-[42px] tracking-[-2px] sm:text-[50px] sm:leading-[53px]">
+            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               The right stack
               <span className="block text-[#9B958E]">
                 for the right job.
               </span>
             </h2>
 
-            <p className="mt-6 max-w-[440px] text-[14px] leading-[24px] text-[#77716A]">
+            <p className="mt-6 max-w-[440px] text-[13px] leading-7 tracking-[0.1px] text-[#77716A] sm:text-[15px]">
               We choose technologies based on performance, maintainability,
               security and what your business actually needs.
             </p>
@@ -841,11 +817,11 @@ function Technology() {
                 key={technology}
                 className="group flex min-h-[105px] flex-col justify-between rounded-2xl border border-black/[0.07] bg-[#FAFAFA] p-5 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF6500]/25 hover:bg-white hover:shadow-[0_15px_35px_rgba(0,0,0,0.05)]"
               >
-                <span className="text-[9px] font-bold tracking-[1.2px] text-[#FF6500]">
+                <span className="text-[10px] font-bold tracking-[1.1px] text-[#FF6500]">
                   {String(index + 1).padStart(2, "0")}
                 </span>
 
-                <span className="text-[14px] font-[800] text-[#292624] sm:text-[15px]">
+                <span className="text-[15px] font-[800] tracking-[-0.1px] text-[#292624] sm:text-[16px]">
                   {technology}
                 </span>
               </div>
@@ -857,18 +833,14 @@ function Technology() {
   );
 }
 
-/* =========================================================
-   FAQ
-========================================================= */
-
 function FAQ() {
   return (
-    <section className="bg-[#F5F4F2] py-16 sm:py-20 lg:py-28">
+    <section className="bg-[#F5F4F2] py-10 sm:py-24 lg:py-20">
       <div className="mx-auto max-w-[1100px] px-5 sm:px-7 lg:px-10">
         <div className="mb-12 text-center">
           <SectionLabel text="FAQ" dark center />
 
-          <h2 className="mt-6 text-[39px] font-[900] leading-[42px] tracking-[-2px] text-[#111] sm:text-[50px] sm:leading-[53px]">
+          <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
             Questions,
             <span className="text-[#9B958E]"> answered.</span>
           </h2>
@@ -881,7 +853,7 @@ function FAQ() {
               className="group rounded-2xl border border-black/[0.07] bg-white"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between gap-5 px-5 py-5 sm:px-7 sm:py-6 [&::-webkit-details-marker]:hidden">
-                <span className="text-[14px] font-[800] text-[#191817] sm:text-[16px]">
+                <span className="text-[15px] font-[800] tracking-[-0.1px] text-[#191817] sm:text-[17px]">
                   {faq.question}
                 </span>
 
@@ -891,7 +863,7 @@ function FAQ() {
               </summary>
 
               <div className="border-t border-black/[0.06] px-5 pb-6 pt-5 sm:px-7">
-                <p className="max-w-[850px] text-[13px] leading-[22px] text-[#77716A] sm:text-[14px] sm:leading-[24px]">
+                <p className="max-w-[850px] text-[13px] leading-7 tracking-[0.1px] text-[#77716A] sm:text-[15px]">
                   {faq.answer}
                 </p>
               </div>
@@ -903,16 +875,6 @@ function FAQ() {
   );
 }
 
-/* =========================================================
-   FINAL CTA
-========================================================= */
-
-
-
-/* =========================================================
-   REUSABLE LABEL
-========================================================= */
-
 function SectionLabel({ text, dark = false, center = false }) {
   return (
     <div
@@ -923,7 +885,7 @@ function SectionLabel({ text, dark = false, center = false }) {
       <span className="h-px w-9 bg-[#FF6500]" />
 
       <span
-        className={`text-[10px] font-bold uppercase tracking-[2.3px] ${
+        className={`text-[12px] font-bold uppercase tracking-[2px] ${
           dark ? "text-[#FF6500]" : "text-[#FF7900]"
         }`}
       >

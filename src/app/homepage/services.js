@@ -66,7 +66,7 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="relative isolate w-full overflow-hidden bg-[#070707] py-20 sm:py-24 lg:py-20">
+    <section className="relative isolate w-full overflow-hidden bg-[#070707] py-10 sm:py-24 lg:py-20">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute left-[-220px] top-[8%] h-[420px] w-[420px] rounded-full bg-[#FF4D00]/[0.08] blur-[120px] sm:h-[550px] sm:w-[550px]" />
 
@@ -86,16 +86,15 @@ export default function Services() {
           <div className="mb-6 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/[0.035] px-4 py-2 backdrop-blur-xl">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#FF6500] opacity-50" />
-
               <span className="relative inline-flex h-2 w-2 rounded-full bg-[#FF6500]" />
             </span>
 
-            <span className="text-[8px] font-bold uppercase tracking-[2px] text-[#A29C94] sm:text-[9px] sm:tracking-[2.5px]">
+            <span className="text-[9px] font-bold uppercase tracking-[2.2px] text-[#A29C94] sm:text-[10px] sm:tracking-[2.5px]">
               Our Expertise
             </span>
           </div>
 
-          <h2 className="text-[36px] font-[900] leading-[42px] tracking-[-1.6px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-2px] lg:text-[60px] lg:leading-[68px] lg:tracking-[-3px]">
+          <h2 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
             We Build Digital
             <span className="block">
               <span className="bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
@@ -104,7 +103,7 @@ export default function Services() {
             </span>
           </h2>
 
-          <p className="mx-auto mt-6 max-w-[680px] text-[11px] leading-[21px] text-[#918B83] sm:text-[12px] sm:leading-[23px] lg:text-[13px] lg:leading-6">
+          <p className="mx-auto mt-6 max-w-[680px] text-[13px] leading-6 tracking-[0.1px] text-[#918B83] sm:text-[14px] sm:leading-7 lg:text-[15px] lg:leading-7">
             From strategy and design to development and growth, we combine
             creativity, technology and business thinking to build digital
             solutions that move brands forward.
@@ -130,16 +129,16 @@ export default function Services() {
                       <Icon size={22} stroke={1.5} />
                     </div>
 
-                    <span className="text-[11px] font-bold tracking-[1px] text-[#4D4A46] transition-colors duration-300 group-hover:text-[#FF6500]">
+                    <span className="text-[11px] font-bold tracking-[1.1px] text-[#4D4A46] transition-colors duration-300 group-hover:text-[#FF6500]">
                       {service.number}
                     </span>
                   </div>
 
-                  <h3 className="mt-7 text-[21px] font-[850] tracking-[-0.6px] text-white sm:text-[23px]">
+                  <h3 className="mt-7 text-[21px] font-[850] leading-7 tracking-[1px] text-white sm:text-[23px] sm:leading-8">
                     {service.title}
                   </h3>
 
-                  <p className="mt-4 min-h-[72px] text-[11px] leading-[21px] text-[#858078] sm:text-[12px] sm:leading-[22px]">
+                  <p className="mt-4 min-h-[72px] text-[13px] leading-6 tracking-[0.1px] text-[#858078] sm:text-[14px] sm:leading-7">
                     {service.description}
                   </p>
 
@@ -157,7 +156,7 @@ export default function Services() {
                           />
                         </span>
 
-                        <span className="text-[9px] font-semibold uppercase tracking-[0.6px] text-[#77716A]">
+                        <span className="text-[10px] font-semibold uppercase tracking-[0.8px] text-[#77716A]">
                           {feature}
                         </span>
                       </div>
@@ -165,7 +164,7 @@ export default function Services() {
                   </div>
 
                   <div className="mt-7 flex items-center justify-between">
-                    <span className="text-[8px] font-bold uppercase tracking-[1.5px] text-[#625E58] transition-colors duration-300 group-hover:text-[#FF7900]">
+                    <span className="text-[9px] font-bold uppercase tracking-[1.4px] text-[#625E58] transition-colors duration-300 group-hover:text-[#FF7900]">
                       Explore Service
                     </span>
 
@@ -192,11 +191,11 @@ export default function Services() {
               </div>
 
               <div>
-                <p className="text-[17px] font-[850] tracking-[-0.4px] text-white sm:text-[19px]">
+                <p className="text-[18px] font-[850] leading-7 tracking-[-0.3px] text-white sm:text-[20px] sm:leading-8">
                   Have a project in mind?
                 </p>
 
-                <p className="mt-1.5 max-w-[550px] text-[10px] leading-5 text-[#77716A] sm:text-[11px]">
+                <p className="mt-1.5 max-w-[550px] text-[13px] leading-6 tracking-[0.1px] text-[#77716A] sm:text-[14px] sm:leading-6">
                   Let's transform your idea into a digital experience that
                   makes an impact.
                 </p>
@@ -205,7 +204,7 @@ export default function Services() {
 
             <Link
               href="/contact"
-              className="group flex h-[50px] w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.30)] sm:w-auto sm:px-7"
+              className="group flex h-[50px] w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[10px] font-bold uppercase tracking-[1.3px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.30)] sm:w-auto sm:px-7"
             >
               Start Your Project
 

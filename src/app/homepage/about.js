@@ -16,7 +16,7 @@ import {
 
 export default function About() {
   return (
-    <section className="relative isolate w-full overflow-hidden bg-white py-20 sm:py-24 lg:py-20">
+    <section className="relative isolate w-full overflow-hidden bg-white py-10 sm:py-24 lg:py-20">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <div className="absolute left-[-180px] top-[15%] h-[350px] w-[350px] rounded-full bg-[#FF6500]/[0.06] blur-[100px] sm:h-[450px] sm:w-[450px]" />
 
@@ -33,7 +33,7 @@ export default function About() {
 
       <div className="mx-auto w-full max-w-[1480px] px-5 sm:px-7 lg:px-10">
         <div className="grid items-center gap-14 lg:grid-cols-[0.95fr_1.05fr] lg:gap-16 xl:gap-24">
-          <div className="relative">
+          <div className="relative hidden sm:block">
             <div className="relative mx-auto h-[390px] w-full max-w-[520px] sm:h-[480px] lg:h-[520px]">
               <div className="absolute left-1/2 top-1/2 h-[260px] w-[260px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#FF6500]/10 blur-[80px] sm:h-[360px] sm:w-[360px] lg:h-[430px] lg:w-[430px]" />
 
@@ -90,11 +90,11 @@ export default function About() {
                   </div>
 
                   <div>
-                    <p className="text-[7px] font-bold uppercase tracking-[1.2px] text-[#99938B]">
+                    <p className="text-[9px] font-bold uppercase tracking-[1.4px] text-[#99938B]">
                       Our Approach
                     </p>
 
-                    <p className="mt-1 text-[10px] font-semibold text-[#151515]">
+                    <p className="mt-1 text-[12px] font-semibold tracking-[0.1px] text-[#151515]">
                       Strategy First
                     </p>
                   </div>
@@ -108,11 +108,11 @@ export default function About() {
                   </div>
 
                   <div>
-                    <p className="text-[7px] font-bold uppercase tracking-[1.2px] text-[#99938B]">
+                    <p className="text-[9px] font-bold uppercase tracking-[1.4px] text-[#99938B]">
                       Our Vision
                     </p>
 
-                    <p className="mt-1 text-[10px] font-semibold text-[#151515]">
+                    <p className="mt-1 text-[12px] font-semibold tracking-[0.1px] text-[#151515]">
                       Build The Future
                     </p>
                   </div>
@@ -131,12 +131,12 @@ export default function About() {
             <div className="mb-6 inline-flex items-center gap-3">
               <span className="h-px w-8 bg-[#FF6500]" />
 
-              <span className="text-[9px] font-bold uppercase tracking-[2.5px] text-[#8B857D]">
+              <span className="text-[10px] font-bold uppercase tracking-[2px] text-[#8B857D]">
                 About Global Tech Next
               </span>
             </div>
 
-            <h2 className="max-w-[750px] text-[36px] font-[900] leading-[42px] tracking-[-1.5px] text-[#111111] sm:text-[48px] sm:leading-[54px] sm:tracking-[-2px] lg:text-[60px] lg:leading-[66px] lg:tracking-[-2.8px]">
+            <h2 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Turning Ideas Into
               <span className="block">
                 <span className="bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
@@ -145,13 +145,13 @@ export default function About() {
               </span>
             </h2>
 
-            <p className="mt-6 max-w-[650px] text-[12px] leading-[22px] text-[#5F5A54] sm:text-[13px] sm:leading-6">
+            <p className="mt-6 max-w-[650px] text-[14px] leading-7 tracking-[0.1px] text-[#5F5A54] sm:text-[15px] sm:leading-7">
               Global Tech Next is a digital technology company helping
               ambitious businesses build powerful websites, applications and
               software solutions that create real business value.
             </p>
 
-            <p className="mt-5 max-w-[650px] text-[11px] leading-6 text-[#817B73] sm:text-[12px] sm:leading-7">
+            <p className="mt-6 max-w-[620px] text-[13px] leading-6 tracking-[0.1px] text-[#A8A39C] sm:mt-7 sm:text-[14px] sm:leading-7 lg:text-[15px] lg:leading-7">
               We bring together technology, design and strategy to create
               digital experiences that are fast, scalable, secure and built
               around your customers. From the first idea to the final launch,
@@ -165,7 +165,7 @@ export default function About() {
                   <IconCheck size={14} />
                 </span>
 
-                <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#5F5A54]">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.9px] text-[#5F5A54]">
                   Innovation Driven
                 </span>
               </div>
@@ -175,7 +175,7 @@ export default function About() {
                   <IconCheck size={14} />
                 </span>
 
-                <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#5F5A54]">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.9px] text-[#5F5A54]">
                   Business Focused
                 </span>
               </div>
@@ -185,7 +185,7 @@ export default function About() {
                   <IconCheck size={14} />
                 </span>
 
-                <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#5F5A54]">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.9px] text-[#5F5A54]">
                   Scalable Technology
                 </span>
               </div>
@@ -195,16 +195,16 @@ export default function About() {
                   <IconCheck size={14} />
                 </span>
 
-                <span className="text-[9px] font-semibold uppercase tracking-[0.8px] text-[#5F5A54]">
+                <span className="text-[10px] font-semibold uppercase tracking-[0.9px] text-[#5F5A54]">
                   Long-Term Support
                 </span>
               </div>
             </div>
 
-            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row ">
               <Link
                 href="/about"
-                className="group flex h-[52px] w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.25)] sm:h-[54px] sm:w-auto sm:px-7"
+                className="group flex h-[52px] w-[250px] items-center justify-center gap-3 rounded-full bg-gradient-to-r from-[#FF4D00] to-[#FF8A00] px-6 text-[10px] font-bold uppercase tracking-[1.3px] text-white shadow-[0_15px_40px_rgba(255,86,0,0.16)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_50px_rgba(255,86,0,0.25)] sm:h-[54px] sm:w-auto sm:px-7"
               >
                 Discover Our Story
 
@@ -215,7 +215,7 @@ export default function About() {
 
               <Link
                 href="/services"
-                className="group flex h-[52px] w-full items-center justify-center gap-3 rounded-full border border-[#151515]/10 bg-[#151515]/[0.025] px-6 text-[9px] font-bold uppercase tracking-[1.2px] text-[#24211E] transition-all duration-300 hover:border-[#FF6500]/30 hover:bg-[#FF6500]/[0.04] sm:h-[54px] sm:w-auto sm:px-7"
+                className="group flex h-[52px] w-[250px] items-center justify-center gap-3 rounded-full border border-[#151515]/10 bg-[#151515]/[0.025] px-6 text-[10px] font-bold uppercase tracking-[1.3px] text-[#24211E] transition-all duration-300 hover:border-[#FF6500]/30 hover:bg-[#FF6500]/[0.04] sm:h-[54px] sm:w-auto sm:px-7"
               >
                 Explore Services
 
@@ -228,11 +228,11 @@ export default function About() {
 
             <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4 border-t border-[#151515]/[0.08] pt-7">
               <div>
-                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-1px] text-transparent">
+                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-0.8px] text-transparent">
                   50+
                 </p>
 
-                <p className="mt-1 text-[8px] font-bold uppercase tracking-[1.3px] text-[#8B857D]">
+                <p className="mt-1 text-[9px] font-bold uppercase tracking-[1.4px] text-[#8B857D]">
                   Projects Delivered
                 </p>
               </div>
@@ -240,11 +240,11 @@ export default function About() {
               <div className="h-10 w-px bg-[#151515]/[0.08]" />
 
               <div>
-                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-1px] text-transparent">
+                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-0.8px] text-transparent">
                   30+
                 </p>
 
-                <p className="mt-1 text-[8px] font-bold uppercase tracking-[1.3px] text-[#8B857D]">
+                <p className="mt-1 text-[9px] font-bold uppercase tracking-[1.4px] text-[#8B857D]">
                   Happy Clients
                 </p>
               </div>
@@ -252,11 +252,11 @@ export default function About() {
               <div className="h-10 w-px bg-[#151515]/[0.08]" />
 
               <div>
-                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-1px] text-transparent">
+                <p className="bg-gradient-to-r from-[#FF4D00] to-[#FFB000] bg-clip-text text-[24px] font-[900] tracking-[-0.8px] text-transparent">
                   24/7
                 </p>
 
-                <p className="mt-1 text-[8px] font-bold uppercase tracking-[1.3px] text-[#8B857D]">
+                <p className="mt-1 text-[9px] font-bold uppercase tracking-[1.4px] text-[#8B857D]">
                   Support
                 </p>
               </div>

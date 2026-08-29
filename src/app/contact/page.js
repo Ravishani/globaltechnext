@@ -129,7 +129,7 @@ export default function ContactPage() {
                 </span>
               </div>
 
-              <h1 className="max-w-[820px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+              <h1 className="max-w-[820px]  text-[28px] font-[900] leading-[42px] tracking-[-0.5px] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
                 Let's build
                 <span className="block text-[#6E6861]">something</span>
 
@@ -460,7 +460,7 @@ export default function ContactPage() {
                 How We Work
               </span>
 
-              <h2 className="mt-6 max-w-[700px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+              <h2 className="mt-6 max-w-[700px]  text-[28px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
                 Simple process.
                 <span className="block text-[#6D6760]">
                   Powerful results.
@@ -501,7 +501,7 @@ export default function ContactPage() {
                 Ready When You Are
               </span>
 
-              <h2 className="mx-auto mt-6 max-w-[800px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+              <h2 className="mx-auto mt-6 max-w-[800px]  text-[28px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
                 Your next big idea
                 <span className="block bg-gradient-to-r from-[#FF4D00] to-[#FFAA00] bg-clip-text text-transparent">
                   starts with a conversation.

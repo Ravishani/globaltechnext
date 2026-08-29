@@ -24,7 +24,7 @@ export default function CTA() {
                 </span>
               </div>
 
-              <h2 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+              <h2 className=" text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
                 Ready to turn
                 <span className="block">your vision into</span>
                 <span className="block">

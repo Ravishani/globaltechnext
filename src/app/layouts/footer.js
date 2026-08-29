@@ -102,7 +102,7 @@ export default function Footer() {
                   </span>
                 </div>
 
-                <h2 className="mt-5 text-[36px] font-black leading-[1.06] tracking-[-1.5px] text-white sm:text-[44px] sm:leading-[1.05] sm:tracking-[-1.9px] lg:text-[54px] lg:leading-[1.03] lg:tracking-[-1px]">
+                <h2 className="mt-5  text-[28px] font-black leading-[1.06] tracking-[-1px] text-white sm:text-[44px] sm:leading-[1.05] sm:tracking-[-1.9px] lg:text-[54px] lg:leading-[1.03] lg:tracking-[-1px]">
                   Have a project in mind?
 
                   <span className="block">

@@ -310,7 +310,7 @@ function ServiceHero({ service }) {
               </span>
             </div>
 
-            <h1 className="text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h1 className=" text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               {service.title}
               <span className="block bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
                 {service.highlight}
@@ -443,7 +443,7 @@ function ServiceOverview({ service }) {
           <div>
             <SectionLabel text="Service Overview" />
 
-            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="mt-6  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-black sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               More than a website.
               <span className="block text-[#A09A93]">
                 A digital growth engine.
@@ -510,7 +510,7 @@ function Capabilities() {
           <div>
             <SectionLabel text="What We Do" dark />
 
-            <h2 className="mt-6 max-w-[700px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="mt-6 max-w-[700px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Everything your
               <span className="text-[#9B958E]">
                 {" "}
@@ -583,7 +583,7 @@ function DetailedServices() {
         <div className="mb-12">
           <SectionLabel text="Our Expertise" />
 
-          <h2 className="mt-6 max-w-[800px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+          <h2 className="mt-6 max-w-[800px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
             A complete approach
             <span className="text-[#9B958E]">
               {" "}
@@ -655,7 +655,7 @@ function Benefits() {
           <div>
             <SectionLabel text="Why Choose Us" />
 
-            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="mt-6  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Built with
               <span className="block text-[#55504B]">
                 business in mind.
@@ -705,7 +705,7 @@ function BigStatement() {
           <SectionLabel text="Our Belief" />
 
           <div>
-            <h2 className="max-w-[1100px] text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#171717] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="max-w-[1100px]  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-[#171717] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Technology should make your business
               <span className="text-[#9B958E]">
                 {" "}
@@ -745,7 +745,7 @@ function Process() {
           <div>
             <SectionLabel text="Our Process" />
 
-            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="mt-6  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-white sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               Simple process.
               <span className="text-[#55504B]"> Strong results.</span>
             </h2>
@@ -798,7 +798,7 @@ function Technology() {
           <div>
             <SectionLabel text="Technology" dark />
 
-            <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+            <h2 className="mt-6  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
               The right stack
               <span className="block text-[#9B958E]">
                 for the right job.
@@ -840,7 +840,7 @@ function FAQ() {
         <div className="mb-12 text-center">
           <SectionLabel text="FAQ" dark center />
 
-          <h2 className="mt-6 text-[35px] font-[900] leading-[42px] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
+          <h2 className="mt-6  text-[28px] font-[900] leading-[1.09] tracking-[-0.5px] text-[#111] sm:text-[48px] sm:leading-[55px] sm:tracking-[-1px] lg:text-[60px] lg:leading-[65px] lg:tracking-[-0.5px]">
             Questions,
             <span className="text-[#9B958E]"> answered.</span>
           </h2>

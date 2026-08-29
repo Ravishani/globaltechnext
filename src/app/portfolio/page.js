@@ -170,7 +170,7 @@ function WorkHero() {
               </span>
             </div>
 
-            <h1 className="text-[46px] font-[900] leading-[1.04] tracking-[-2.2px] sm:text-[62px] sm:leading-[1.02] sm:tracking-[-2.8px] lg:text-[78px] lg:leading-[0.98] lg:tracking-[-3.8px]">
+            <h1 className="text-[35px] font-[900] leading-[1.04] tracking-[-2.2px] sm:text-[62px] sm:leading-[1.02] sm:tracking-[-2.8px] lg:text-[78px] lg:leading-[0.98] lg:tracking-[-3.8px]">
               We build digital
               <span className="block bg-gradient-to-r from-[#FF4D00] via-[#FF7200] to-[#FFB000] bg-clip-text text-transparent">
                 experiences that matter.
